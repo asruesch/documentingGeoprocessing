@@ -16,7 +16,7 @@ A short crash course on how to use Python scripting in lieu of metadata for docu
 
 1. Annotate appropriately. Commented code helps readers interpret your calculations. For example:
 
-'''python
+''''''python
 ####################
 # Calculting RUSLE #
 ####################
@@ -42,4 +42,4 @@ C = Raster(cFactorFile)
 
 # Calculate RUSLE (E = erosion)
 E = R * K * LS * C
-'''
+''''''
