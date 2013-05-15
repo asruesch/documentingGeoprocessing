@@ -16,7 +16,7 @@ A short crash course on how to use Python scripting in lieu of metadata for docu
 
 1. Annotate appropriately. Commented code helps readers interpret your calculations. For example:
 
-<tt>
+```python
 ####################
 # Calculting RUSLE #
 ####################
@@ -26,20 +26,4 @@ Am = facLand * float(env.cellSize)**2
 # Slope (in radians)
 br = Slope(demFile, "DEGREE") * (math.pi / 180.0)
 
-# Constants
-a0 = 22.1
-m = 0.6
-n = 1.3
-b0 = 0.09
-
-# LS = Slope / slope length factor
-LS  =  (m+1)*((Am / a0)**m)*((Sin(br) / b0)**n)
-
-# R = erosivity, K = erodibility, C = Land cover
-R = Raster(erosivityFile)
-K = Raster(kFactorFile)
-C = Raster(cFactorFile)
-
-# Calculate RUSLE (E = erosion)
-E = R * K * LS * C
-</tt>
+```
